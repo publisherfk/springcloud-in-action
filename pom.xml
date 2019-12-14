@@ -10,6 +10,7 @@
     <modules>
         <module>hystrix-in-action</module>
         <module>hello-service</module>
+        <module>feign-in-action</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
