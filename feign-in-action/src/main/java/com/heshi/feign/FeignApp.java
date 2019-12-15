@@ -12,7 +12,6 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan({"com.heshi.feign", "com.heshi.hello"})
 public class FeignApp {
     public static void main(String args[]) {
         SpringApplication.run(FeignApp.class, args);

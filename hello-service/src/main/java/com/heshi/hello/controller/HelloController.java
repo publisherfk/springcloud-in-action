@@ -30,11 +30,21 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello() throws InterruptedException {
         ServiceInstance serviceInstance = getServiceInstance();
-        int sleepTime = new Random().nextInt(2000);
+        int sleepTime = new Random().nextInt(6000);
         logger.info("sleepTime:{}", sleepTime);
         Thread.sleep(sleepTime);
         logger.info("/hello, host:{}, service_id:{}", serviceInstance.getHost(), serviceInstance.getServiceId());
         return "hello";
+    }
+
+    @GetMapping("/hello2")
+    public String hello2() throws InterruptedException {
+        ServiceInstance serviceInstance = getServiceInstance();
+        int sleepTime = new Random().nextInt(1800);
+        logger.info("sleepTime:{}", sleepTime);
+        Thread.sleep(sleepTime);
+        logger.info("/hello2, host:{}, service_id:{}", serviceInstance.getHost(), serviceInstance.getServiceId());
+        return "hello2";
     }
 
     public ServiceInstance getServiceInstance() {

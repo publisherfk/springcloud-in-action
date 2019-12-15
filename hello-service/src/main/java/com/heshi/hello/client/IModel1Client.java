@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * @author by fukun
  */
-@FeignClient(name = "hello-service", fallback = Model1ClientFallBack.class)
+@FeignClient(name = "hello-service", fallback = Model1ClientFallBack.class, primary = false)
 public interface IModel1Client {
     String API_PREFIX = "/v1";
 
