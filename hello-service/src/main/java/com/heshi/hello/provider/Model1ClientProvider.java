@@ -1,6 +1,7 @@
 package com.heshi.hello.provider;
 
 import com.heshi.hello.client.IModel1Client;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,8 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Primary
 @RestController
 public class Model1ClientProvider implements IModel1Client {
+
+    @Value("${server.port}")
+    private int port;
+
     @Override
     public String hello() {
-        return "provider";
+        return "provider" + port;
     }
 }

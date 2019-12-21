@@ -12,6 +12,7 @@
         <module>hello-service</module>
         <module>feign-in-action</module>
         <module>sleuth-in-action</module>
+        <module>ribbon-in-action</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
