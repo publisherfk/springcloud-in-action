@@ -1,0 +1,11 @@
+/target
+/.classpath
+/.project
+/.settings
+/.springBeans
+/.idea
+build.properties
+MANIFEST.MF
+.project
+.settings
+*.iml
