@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.nacos</groupId>
-            <artifactId>nacos-spring-context</artifactId>
-            <version>0.3.4</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${nacos.version}</version>
         </dependency>
     </dependencies>
 
