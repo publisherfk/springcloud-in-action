@@ -16,6 +16,10 @@
         <module>nacos-in-action</module>
         <module>config-center-in-action</module>
         <module>zuul-in-action</module>
+        <module>zookeeperconfig-in-action</module>
+        <module>docker-in-action</module>
+        <module>swagger-in-action</module>
+        <module>admin-in-action</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
